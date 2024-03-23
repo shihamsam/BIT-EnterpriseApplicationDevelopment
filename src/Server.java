@@ -10,9 +10,9 @@ public class Server extends ImplmyFirst {
         try {
 
             ImplmyFirst obj = new ImplmyFirst();
-            myFirst stub = (myFirst) UnicastRemoteObject.exportObject(obj,0);
+            myFirst stub = (myFirst) UnicastRemoteObject.exportObject(obj,10990);
 
-            Registry registry = LocateRegistry.getRegistry();
+            Registry registry = LocateRegistry.createRegistry(10990);
 
             registry.bind("myFirst", stub);
             System.out.println("Server Ready!");

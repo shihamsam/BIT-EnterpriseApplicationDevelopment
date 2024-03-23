@@ -8,7 +8,7 @@ public class Client {
 
     public static void main(String[] args) {
         try{
-            Registry registry= LocateRegistry.getRegistry();
+            Registry registry= LocateRegistry.getRegistry("localhost", 10990);
 
             myFirst stub = (myFirst) registry.lookup("myFirst");
 
