@@ -57,7 +57,7 @@ public class CatalogServlet extends HttpServlet {
 		out.println("</head>");
 		out.println("<body>");
 		
-		out.println("<h1>Products</h1>");
+		out.println("<h1>Products (" + Catalog.Count() + ")</h1>");
 		
 		
 		out.println("<table class=\"table\">");

@@ -20,4 +20,8 @@ public class Catalog {
 	public static List<CatalogItem> getItems(){
 		return new ArrayList<CatalogItem>(catalogItems.values());
 	}
+	
+	public static int Count() {
+		return catalogItems.size();
+	}
 }
